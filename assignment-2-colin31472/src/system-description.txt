@@ -1,0 +1,9 @@
+# Outline the system structure (including necessary files and directories for running the code)
+
+## File Structure
+- src/Code/letterLangId.ipynb: Implements the letter bigram language identification model.
+- src/Code/wordLangId.ipynb: Implements the word bigram language identification model with add‑one smoothing.
+- src/Code/wordLangId2.ipynb: Implements the word bigram language identification model with Good–Turing smoothing.
+- src/Data/Input/: Contains training data files (e.g., `LangId.train.English`, `LangId.train.French`, `LangId.train.Italian`).
+- src/Data/Validation/: Contains the test file (`LangId.test`) and the solution file (`labels.sol`).
+- src/Data/Output/: The output files (e.g., `letterLangId.out`, `wordLangId.out`, `wordLangId2.out`) are saved here.

@@ -1,0 +1,40 @@
+# Outline the system structure (including necessary files and directories for running the code)
+
+The temporal named entity recognizer is designed to extract absolute date expressions from a given text. The system primarily relies on regular expressions to identify and capture different types of fixed date formats.
+
+Before defining the specific patterns, two basic regex components are established:
+- Month (month): A regex pattern to match full month names and their abbreviations.
+- Day (day): A regex pattern to match valid day numbers (1-31), including ordinal suffixes.
+
+Patterns for Extracting Temporal Named Entities
+The system classifies date expressions into nine distinct categories to ensure comprehensive extraction:
+
+1. Weekday + Month + Day (optional year)
+Captures a weekday, followed by a month name, day number, and an optional year.
+
+2. Month + Day + Year
+Captures a month name, followed by a day number, and a four-digit year.
+
+3. "the X of Month" format (optional year)
+Captures a day number with an ordinal suffix, followed by "of", and a month name.
+
+4. Month + Day only (without year)
+Captures cases where only a month and a day are mentioned, without specifying a year.
+
+5. American numeric date format
+Captures numeric dates written in the MM/DD/YYYY format.
+
+6. Weekday alone (optional time expression)
+Captures weekdays with optional ordinal day numbers or time expressions
+
+7. U.S. federal holidays
+Captures U.S. federal holidays based on a list of valid holiday names.
+
+8. Year only
+Captures standalone four-digit years that are not part of a larger date expression.
+
+9. Month name alone
+Captures cases where only a month name appears.
+
+The regex patterns are combined into a single compiled pattern using re.compile() method, ensuring the longest patterns match first. The program then opens the input.txt file and uses the finditer() method to find all matches that meet the defined conditions, storing them in the matches list. Each match (m.group(0)) contains the full extracted text, with leading and trailing spaces removed.
+After extraction, the results are sorted in the order they appeared in input.txt to maintain the original sequence. Finally, the extracted date entities are written to output.txt, with each match saved on a new line.

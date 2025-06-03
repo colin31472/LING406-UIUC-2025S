@@ -1,0 +1,17 @@
+__assignment-1-colin31472__LING406-HOMEWORK-01-RUBRIC__
+
+Design:					8/10
+	Notes (if any):  
+    - Make sure to use relative paths which point to where your files are located:
+    - "../Data/Inpu/input.txt" instead of just "input.txt" (-2)
+
+Code:					50/50
+	Fixed Dates			25/25
+		Notes (if any):
+	Holidays			25/25
+		Notes (if any):
+Total:					58/60
+
+__TA-COMMENTS-IF-ANY__
+
+Excellent work!
