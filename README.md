@@ -6,6 +6,7 @@ This repository contains coursework for LING406 at UIUC. Below is a summary of e
 
 ## Assignment 1: Temporal Named Entity Recognition
 **Task:** Build a system using regular expressions to detect fixed date expressions and U.S. holidays in unstructured text.  
+
 **Output:** Extracted date expressions written to `output.txt`.
 
 ---
@@ -15,7 +16,8 @@ This repository contains coursework for LING406 at UIUC. Below is a summary of e
 **Experiments:**  
 - Letter bigram model with add-one smoothing  
 - Word bigram model with add-one smoothing  
-- Word bigram model with Good-Turing smoothing  
+- Word bigram model with Good-Turing smoothing
+
 **Output:** Language prediction per line of the test file.
 
 ---
@@ -25,7 +27,8 @@ This repository contains coursework for LING406 at UIUC. Below is a summary of e
 **Components:**  
 - Baseline system with bag-of-words context features  
 - Improved system with enhanced feature engineering  
-- Feature ablation analysis  
+- Feature ablation analysis
+
 **Output:** Performance metrics and error analysis.
 
 ---
@@ -36,7 +39,8 @@ This repository contains coursework for LING406 at UIUC. Below is a summary of e
 - Start with a baseline model  
 - Compare multiple algorithms  
 - Try various feature engineering approaches  
-- Train and evaluate an improved final system  
+- Train and evaluate an improved final system
+
 **Dataset:** Cornell movie review polarity dataset  
 **Extra credit:** Optional advanced tasks like syntax-aware features or domain transfer to Yelp data.
 
