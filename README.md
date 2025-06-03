@@ -1,4 +1,4 @@
-# LING406: Intro to Computational Linguistics — Spring 2025
+# LING406: Intro to Computational Linguistics (Spring 2025)
 
 This repository contains coursework for LING406 at UIUC. Below is a summary of each assignment and its core objective.
 
